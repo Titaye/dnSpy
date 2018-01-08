@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\dnSpy\dnSpy.Decompiler\**\*.cs" />
+    <EmbeddedResource Include="..\..\dnSpy\dnSpy.Decompiler\**\*.resx"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="MSBuild\ResXProjectFile.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\dnlib\dnlib.csproj" />
+    <ProjectReference Include="..\dnSpy.Contracts.Logic\dnSpy.Contracts.Logic.csproj" />
+  </ItemGroup>
+</Project>

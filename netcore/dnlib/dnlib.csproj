@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\Libraries\dnlib\src\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="..\..\Libraries\dnlib\src\DotNet\ModuleDefMD.cs" />
+    <Compile Remove="..\..\Libraries\dnlib\src\ExtensionAttribute.cs" />
+    <Compile Remove="ExtensionAttribute.cs" />
+    <Compile Remove="..\..\Libraries\dnlib\src\DotNet\Emit\MethodTableToTypeConverter.cs" />
+    <Compile Remove="..\..\Libraries\dnlib\src\HandleProcessCorruptedStateExceptionsAttribute.cs" />
+    <Compile Remove="ModuleDefMD.CoreApp.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Reflection.Emit" Version="4.3.0" />
+    <PackageReference Include="System.Reflection.Emit.Lightweight" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>

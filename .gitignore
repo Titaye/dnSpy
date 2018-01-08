@@ -10,3 +10,5 @@ _ReSharper*/
 *.ide/
 *.tmp_proj
 project.lock.json
+/netcore/dnSpyLibs/lib
+/netcore/dnSpyLibs/*.nupkg
