@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <LangVersion>latest</LangVersion>
-    
+
   </PropertyGroup>
 
 
@@ -25,5 +25,7 @@
   <ItemGroup>
     <Compile Remove="..\..\Extensions\ILSpy.Decompiler\dnSpy.Decompiler.ILSpy.Core\VisualBasic\**" />
   </ItemGroup>
+
+
 
 </Project>

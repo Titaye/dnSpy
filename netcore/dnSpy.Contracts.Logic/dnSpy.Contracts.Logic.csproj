@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
@@ -14,6 +14,7 @@
     <EmbeddedResource Include="..\..\dnSpy\dnSpy.Contracts.Logic\**\*.resx"/>
   </ItemGroup>
 
-
-
+  <ItemGroup>
+    <PackageReference Include="System.ValueTuple" Version="4.4.0" />
+  </ItemGroup>
 </Project>
